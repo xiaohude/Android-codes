@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">小虎电话精灵</string>
+    <string name="hello_world">欢迎使用小虎自动电话留言系统！</string>
+    <string name="menu_settings">退出</string>
+    <string name="menu_about">关于</string>
+    <string name="button">请留言</string>
+
+</resources>

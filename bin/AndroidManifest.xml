@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.phone4"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="10" />
+    <uses-permission 
+        android:name="android.permission.CALL_PHONE"/>
+    <uses-permission 
+        android:name="android.permission.SEND_SMS"/>
+    <uses-permission 
+        android:name="android.permission.READ_PHONE_STATE"/>
+	
+    
+	<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission android:name="android.permission.INTERNET"/>
+	<uses-permission android:name="android.permission.RECORD_AUDIO"/>
+	
+	<uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+	<uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+	
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/x3"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.phone4.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.example.phone4.MyMediaPlayer"
+            android:theme="@android:style/Theme.Dialog"
+            android:label="小虎播放器" >
+            
+        </activity>
+       
+        <activity
+            android:name="com.example.phone4.MenuAbout"
+            android:theme="@android:style/Theme.Dialog"
+            android:label="关于" >
+            
+        </activity>
+        
+        <receiver android:name="com.example.phone4.tp"  android:priority="10000" android:permission="android.permission.READ_PHONE_STATE">
+            <intent-filter>
+  			  <action android:name="android.intent.action.PHONE_STATE" />
+   			</intent-filter>
+  		</receiver>
+  		
+  		<service android:name="com.example.phone4.MyService"></service>
+  		
+  		
+  		<service android:name="com.kyview.DownloadService" />
+		<activity android:name="com.kyview.AdviewWebView" /> 
+		
+		<activity android:name="com.baidu.mobads.AppActivity" 
+		android:configChanges="keyboard|keyboardHidden|orientation" />
+		<meta-data android:name="BaiduMobAd_APP_ID" android:value="d6cd31aa" />
+		<meta-data android:name="BaiduMobAd_APP_SEC" android:value="d6cd31aa_e498eab7" />
+		
+		<meta-data android:name="AdView_CHANNEL" android:value="HIAPK"></meta-data> 
+		<!-- 
+  		<meta-data android:name="AdView_CHANNEL" android:value="APPCHINA"></meta-data>
+  		-->
+    </application>
+    
+    <!-- AdView SDK mandatory or important permissions -->
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+	
+    
+</manifest>

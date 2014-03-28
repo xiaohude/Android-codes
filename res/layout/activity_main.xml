@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+   
+	
+    android:id="@+id/srcollview"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    android:fadingEdge="none">
+<LinearLayout 
+    android:id="@+id/mainLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"  
+    android:background="#FFFFFFFF">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_world" />
+   
+ 
+  <LinearLayout 
+  android:id="@+id/LinearLayout01" 
+  android:layout_width="wrap_content" 
+  android:layout_height="wrap_content">
+  <ImageButton 
+  android:id="@+id/ImageButton01" 
+  android:layout_width="wrap_content" 
+  android:layout_height="wrap_content" 
+  android:src="@drawable/record">
+  </ImageButton>
+  <ImageButton 
+  android:id="@+id/ImageButton02" 
+  android:layout_width="wrap_content" 
+  android:layout_height="wrap_content" 
+  android:src="@drawable/stop">
+  </ImageButton>
+  <ImageButton 
+  android:id="@+id/ImageButton03" 
+  android:layout_width="wrap_content" 
+  android:layout_height="wrap_content" 
+  android:src="@drawable/play">
+  </ImageButton>
+  <ImageButton 
+  android:id="@+id/ImageButton04" 
+  android:layout_width="wrap_content" 
+  android:layout_height="wrap_content" 
+  android:src="@drawable/delete">
+  </ImageButton>
+  </LinearLayout>
+  <TextView 
+  android:id="@+id/TextView01" 
+  android:layout_width="wrap_content" 
+  android:layout_height="wrap_content"
+  android:textColor="#000000">
+  </TextView>
+  <ListView 
+  android:id="@+id/ListView01" 
+  android:layout_width="wrap_content" 
+  android:layout_height="200dip" 
+  
+  android:background="#000000"
+  android:cacheColorHint="#000000"
+  >
+  </ListView>
+  <LinearLayout 
+  android:id="@+id/LinearLayout01" 
+  android:layout_width="wrap_content" 
+  android:layout_height="wrap_content">
+   <Button
+     android:id="@+id/button" 
+ 	 android:layout_width="wrap_content" 
+ 	 android:layout_height="wrap_content"
+ 	 android:text="设置提示音"
+ 	 />
+    <Button
+     android:id="@+id/button2" 
+ 	 android:layout_width="wrap_content" 
+ 	 android:layout_height="wrap_content"
+ 	 android:text="播放提示音"
+ 	 />
+    <Button
+     android:id="@+id/refreshbutton" 
+ 	 android:layout_width="wrap_content" 
+ 	 android:layout_height="wrap_content"
+ 	 android:text="刷新列表"
+ 	 />
+    </LinearLayout>
+    
+  
+    <LinearLayout 
+ 	 android:id="@+id/LinearLayout01" 
+ 	 android:layout_width="wrap_content" 
+ 	 android:layout_height="wrap_content">
+  	<CheckBox
+  	 android:id="@+id/checkBox"
+  	 android:layout_width="wrap_content" 
+ 	 android:layout_height="wrap_content"
+ 	 android:text="启动"
+  	    />	
+  	<EditText
+	    android:id="@+id/timeEdit"
+	    android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numeric="integer"
+	    />
+  	<TextView
+        android:id="@+id/timeTX"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="秒后自动接听服务" />
+  	</LinearLayout>
+    <Button
+     android:id="@+id/button3" 
+ 	 android:layout_width="wrap_content" 
+ 	 android:layout_height="wrap_content"
+ 	 android:text="保存设置"
+ 	 />
+
+    <LinearLayout 
+    android:id="@+id/LinearLayout02" 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"> 
+    <TextView android:id="@+id/soundText" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:text="媒体音量：" />      
+    <SeekBar 
+        android:id="@+id/SeekBar01" 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        ></SeekBar>
+    </LinearLayout>
+    
+
+    
+   
+    
+</LinearLayout>
+</ScrollView>

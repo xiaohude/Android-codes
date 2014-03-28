@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+  	
+    android:id="@+id/srcollview"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    android:fadingEdge="none">
+<LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"  
+    android:background="#FFFFFFFF">
+    
+    <TextView
+        android:id="@+id/menu_about_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:background="#000000"
+        android:textSize="20sp"
+        android:text="		您好，亲。感谢您使用这款软件，希望此软件给您的手机生活带来了便利。
+        		\n		本人是华航的一名学生，这款软件是我在课余时间编写的，并且是我编写的第一款手机软件，多少肯定存在一些不完善的地方。
+				在您使用的过程当中如果发现有什么问题，或者您还需要一些其他的功能，欢迎您跟我联系，我会根据您的要求一步步完善此软件。
+				\n		如果您觉得此软件还不错可以介绍给您的朋友使用。方便大家的生活。
+				\n      【软件说明】提示音可以自己录制设置，如果您在设置了提示音后又想使用默认提示音只需将sdcard/XiaoHuPhone/XiaoHu文件夹中您录制的提示音删除即可。录音留言保存在sdcard/XiaoHuPhone文件夹下。本软件不能在Android4.0以上系统使用，因为4.0以上的系统把软件接电话的权限封了，没法实现自动接电话，我正在努力找解决办法，如果您有办法解决欢迎您联系我。
+				\n		联系QQ：746752411  邮箱746752411@qq.com
+				" />
+        
+    
+</LinearLayout>
+</ScrollView>
